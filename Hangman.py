@@ -11,16 +11,16 @@ def playagain():
 
     return choice.lower() == 'y'
 def playgame():
-    name = raw_input("What is your name? ")
+    name = raw_input("Please enter your name ")
 
-    print("Hello, " + name, "Time to play hangman!")
+    print("Hello, " + name, "Let's play play hangman!")
 
     print(" ")
 
     # wait for 1 second
     time.sleep(1)
 
-    print("Start guessing...")
+    print("Fill in the blanks by entering a character")
     time.sleep(0.5)
 
     # here we set the secret
