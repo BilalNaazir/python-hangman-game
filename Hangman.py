@@ -24,7 +24,7 @@ def playgame():
     time.sleep(0.5)
 
     # here we set the secret
-    wordList=["secret", "kitchen", "great","distinguish","crave","feather","green","difficult","hard" ]
+    wordList=["secret", "kitchen", "great","distinguish","crave","feather","green","difficult","hard","believe" ]
     word = random.choice(wordList)
 
     # creates an variable with an empty value
