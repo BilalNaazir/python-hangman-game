@@ -67,14 +67,13 @@ def playgame():
         # set the players guess to guesses
         guesses += guess
 
-        # if the guess is not found in the secret word
-        turns -= 1
+
         if guess in word:
             print("Correct")
-
         # if guess not in word:
         else:
 
+            turns -= 1
             # print wrong
             print("Wrong")
 
