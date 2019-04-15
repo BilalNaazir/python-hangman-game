@@ -30,7 +30,7 @@ def playgame():
     # variable created to hold each and every guess of the user as string
     guesses = ''
 
-    # turns the user gets is 10
+    # turns the user gets is equal to 3 + the  length of the word
     turns = len(word)+3
 
 
