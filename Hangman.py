@@ -23,28 +23,28 @@ def playgame():
     print("Fill in the blanks by entering a character")
     time.sleep(0.5)
 
-    # here we set the secret
     wordList=["secret", "kitchen", "great","distinguish","crave","feather","green","difficult","hard","believe","ravishing","pale","feeble","bounty" ]
+    # the word is picked at random from the list
     word = random.choice(wordList)
 
-    # creates an variable with an empty value
+    # variable created to hold each and every guess of the user as string
     guesses = ''
 
-    # determine the number of turns
-    turns = 10
+    # turns the user gets is 10
+    turns = len(word)+3
 
-    # Create a while loop
 
-    # check if the turns are more than zero
+
+    # does the code if turns is more than 0
     while turns > 0:
 
         # make a counter that starts with zero
-        failed = 0
+        numberOfFailTries = 0
 
-        # for every character in secret_word
+        # iterates for every character in the word
         for char in word:
 
-            # see if the character is in the players guess
+            # see if the character matches the players guess character
             if char in guesses:
                 # print then out the character
                 print(char),
@@ -55,12 +55,12 @@ def playgame():
                 print("_"),
 
                 # and increase the failed counter with one
-                failed += 1
+                numberOfFailTries += 1
 
         # if failed is equal to zero
 
         # print You Won
-        if failed == 0:
+        if numberOfFailTries == 0:
             print("You won")
            # exit the script
             break
@@ -68,7 +68,6 @@ def playgame():
         # ask the user go guess a character
         guess = raw_input("guess a character:")
 
-        print(guess)
         # set the players guess to guesses
         guesses += guess
 
