@@ -1,7 +1,5 @@
 import random
-
 from pip._vendor.distlib.compat import raw_input
-
 import time
 
 # welcoming the user
@@ -32,8 +30,6 @@ def playgame():
 
     # turns the user gets is equal to 3 + the  length of the word
     turns = len(word)+3
-
-
 
     # does the code if turns is more than 0
     while turns > 0:
@@ -78,25 +74,19 @@ def playgame():
 
         # if guess not in word:
         else:
-            print(1)
-
-
 
             # print wrong
             print("Wrong")
 
-            # how many turns are left
 
-
-            # if the turns are equal to zero
-
-
+        # if the turns are equal to zero
         if turns == 0:
             # print "You Loose"
             print("You Lose")
             if playagain():
                 playgame()
             return
+        # how many turns are left
         print("You have", + turns, 'more guesses')
 
 playgame()
